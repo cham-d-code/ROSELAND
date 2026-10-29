@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronDown, Menu, Phone, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
+import roselandLogo from '@/assets/img/roseland-logo.png'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
@@ -39,8 +40,8 @@ export function Navbar() {
       )}
     >
       <nav className="container-px mx-auto flex h-20 max-w-7xl items-center justify-between">
-        <a href="#home" className="flex items-center gap-2">
-          <span className="script text-3xl text-white">Roseland</span>
+        <a href="#home" className="flex items-center">
+          <img src={roselandLogo} alt="Roseland" className="h-11 w-auto md:h-12" />
         </a>
 
         <ul className="hidden items-center gap-8 text-[13px] font-semibold tracking-wide uppercase lg:flex">

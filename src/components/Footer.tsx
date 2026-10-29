@@ -27,7 +27,7 @@ const EXPERIENCES = [
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-primary pt-16 pb-8 text-primary-foreground">
+    <footer id="contact" className="bg-primary pt-12 pb-8 text-primary-foreground">
       <div className="container-px mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.3fr_1fr_1fr_1.2fr]">
         <div>
           <span className="script text-3xl text-white">Roseland</span>

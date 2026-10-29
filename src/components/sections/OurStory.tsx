@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-import factoryWorker from '@/assets/img/factory-worker.jpg'
+import beansMacro from '@/assets/img/beans-macro.jpg'
 import storyPath from '@/assets/img/story-path.jpg'
 import { Reveal } from '@/components/Reveal'
 import { SectionLabel } from '@/components/SectionLabel'
@@ -8,7 +8,7 @@ import { scaleIn } from '@/lib/motion'
 
 export function OurStory() {
   return (
-    <section className="container-px mx-auto max-w-7xl overflow-x-clip py-24 md:py-32">
+    <section className="container-px mx-auto max-w-7xl overflow-x-clip py-16 md:py-20">
       <div className="grid items-center gap-16 md:grid-cols-2 md:gap-20">
         <div>
           <Reveal>
@@ -59,8 +59,8 @@ export function OurStory() {
             className="absolute -bottom-10 left-4 w-40 overflow-hidden rounded-2xl border-4 border-background shadow-xl sm:w-52 md:-left-10"
           >
             <img
-              src={factoryWorker}
-              alt="Roasting Roseland's coffee by hand"
+              src={beansMacro}
+              alt="Freshly roasted Roseland coffee beans"
               className="aspect-[3/4] w-full object-cover"
             />
           </motion.div>

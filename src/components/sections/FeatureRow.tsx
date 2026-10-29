@@ -15,7 +15,7 @@ const FEATURES = [
 export function FeatureRow() {
   return (
     <section className="border-t border-border/70">
-      <div className="container-px mx-auto max-w-7xl py-16 md:py-20">
+      <div className="container-px mx-auto max-w-7xl py-10 md:py-14">
         <RevealGroup
           gap={0.1}
           className="grid grid-cols-2 gap-y-10 text-center md:grid-cols-4 md:gap-y-0"

@@ -28,7 +28,7 @@ const REVIEWS = [
 
 export function Testimonials() {
   return (
-    <section className="bg-primary py-24 text-primary-foreground md:py-32">
+    <section className="bg-primary py-16 text-primary-foreground md:py-20">
       <div className="container-px mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>

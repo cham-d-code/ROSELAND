@@ -45,7 +45,7 @@ const ROOMS = [
 
 export function Cottages() {
   return (
-    <section id="cottages" className="bg-muted/50 py-24 md:py-32">
+    <section id="cottages" className="bg-muted/50 py-16 md:py-20">
       <div className="container-px mx-auto max-w-7xl">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-xl">

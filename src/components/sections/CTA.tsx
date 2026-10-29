@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 export function CTA() {
   return (
-    <section id="book" className="relative overflow-hidden py-28 text-center md:py-36">
+    <section id="book" className="relative overflow-hidden py-20 text-center md:py-24">
       <img
         src={mountainsKnuckles}
         alt=""

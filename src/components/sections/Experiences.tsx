@@ -27,7 +27,7 @@ const EXPERIENCES = [
 
 export function Experiences() {
   return (
-    <section className="container-px mx-auto max-w-7xl py-24 md:py-32">
+    <section className="container-px mx-auto max-w-7xl py-16 md:py-20">
       <div className="mx-auto max-w-2xl text-center">
         <Reveal>
           <SectionLabel>Also at Roseland</SectionLabel>

@@ -4,7 +4,7 @@ import { SectionLabel } from '@/components/SectionLabel'
 
 export function Banner() {
   return (
-    <section className="relative flex h-[60vh] min-h-[380px] items-center justify-center overflow-hidden text-center">
+    <section className="relative flex h-[46vh] min-h-[320px] items-center justify-center overflow-hidden text-center">
       <img
         src={heroEllaMorning}
         alt=""

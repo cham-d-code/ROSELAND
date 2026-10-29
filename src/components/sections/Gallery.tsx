@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 import beansMacro from '@/assets/img/beans-macro.jpg'
-import cafeBright from '@/assets/img/cafe-bright.jpg'
+import cafeWicker from '@/assets/img/cafe-wicker.jpg'
 import factoryWorker from '@/assets/img/factory-worker.jpg'
 import heroBandarawela from '@/assets/img/hero-bandarawela.jpg'
 import roomCabin from '@/assets/img/room-cabin.jpg'
@@ -11,17 +11,41 @@ import { SectionLabel } from '@/components/SectionLabel'
 import { fadeUp } from '@/lib/motion'
 
 const SHOTS = [
-  { src: heroBandarawela, alt: 'View over Bandarawela', span: 'row-span-2' },
-  { src: factoryWorker, alt: 'Roseland coffee factory at work' },
-  { src: cafeBright, alt: 'Ceylon Kahawa café' },
-  { src: roomCabin, alt: 'A Roseland cottage' },
-  { src: beansMacro, alt: 'Freshly roasted coffee beans' },
-  { src: roseCloseup, alt: 'Roseland rose', span: 'row-span-2' },
+  {
+    src: heroBandarawela,
+    alt: 'View over Bandarawela',
+    className: 'row-span-2 md:col-start-1 md:row-start-1',
+  },
+  {
+    src: factoryWorker,
+    alt: 'Roseland coffee factory at work',
+    className: 'md:col-start-2 md:row-start-1',
+  },
+  {
+    src: roomCabin,
+    alt: 'A Roseland cottage',
+    className: 'md:col-start-3 md:row-start-1',
+  },
+  {
+    src: beansMacro,
+    alt: 'Freshly roasted coffee beans',
+    className: 'md:col-start-2 md:row-start-2',
+  },
+  {
+    src: cafeWicker,
+    alt: 'Ceylon Kahawa café interior',
+    className: 'md:col-start-3 md:row-start-2',
+  },
+  {
+    src: roseCloseup,
+    alt: 'Roseland rose',
+    className: 'row-span-2 md:col-start-4 md:row-start-1',
+  },
 ]
 
 export function Gallery() {
   return (
-    <section id="gallery" className="bg-muted/50 py-24 md:py-32">
+    <section id="gallery" className="bg-muted/50 py-16 md:py-20">
       <div className="container-px mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>
@@ -36,13 +60,13 @@ export function Gallery() {
 
         <RevealGroup
           gap={0.08}
-          className="mt-14 grid auto-rows-[160px] grid-cols-2 gap-4 md:grid-cols-4 md:auto-rows-[200px]"
+          className="mt-14 grid auto-rows-[160px] grid-cols-2 gap-4 md:grid-cols-4 md:auto-rows-[220px]"
         >
           {SHOTS.map((shot) => (
             <motion.div
               key={shot.alt}
               variants={fadeUp}
-              className={`group relative overflow-hidden rounded-2xl ${shot.span ?? ''}`}
+              className={`group relative overflow-hidden rounded-2xl ${shot.className}`}
             >
               <img
                 src={shot.src}
